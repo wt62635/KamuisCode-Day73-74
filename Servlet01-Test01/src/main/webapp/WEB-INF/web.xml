@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5">
+	<servlet>
+		<servlet-name>DateServlet</servlet-name>
+		<!-- 要写完整的类名(包名也得写)。 因为容器会利用java反射加载该Servlet, 然后实例化。 -->
+		<servlet-class>web.DateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DateServlet</servlet-name>
+		<url-pattern>/Date</url-pattern>
+	</servlet-mapping>
+</web-app>
